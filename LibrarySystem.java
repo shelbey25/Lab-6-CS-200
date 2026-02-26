@@ -4,7 +4,7 @@ import java.util.Scanner;
 /* 
 Team Contributions:
     Shelbe Yousey - 12566098 - Wrote the main library system flow and helped implement borrowBook
-
+    Charles Woods - 12144978 - Implemented the individual class declarations and brought them together.
 */
 
 public class LibrarySystem {
