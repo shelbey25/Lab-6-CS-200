@@ -9,6 +9,7 @@ public class Student{
     public Student(int studentID, String name){
         this.studentID = studentID;
         this.name = name;
+        this.borrowedBooks = new Vector<Book>();
     }
 
     public boolean confirmIdentity(int studentID, String name) {
