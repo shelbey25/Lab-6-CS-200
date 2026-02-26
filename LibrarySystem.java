@@ -8,6 +8,7 @@ Team Contributions:
     Tsion Shamsu - 12460874 - Setup group document and basic classes
     Jack Dean - 12207218- Added availability setting to book status, and wrote a rough radgh of class function grouop document.
     Michael Tesfaye - 12459837 - Provided feedback
+    Chapman White - 12273039 - Provided feedback, attempted search functions
 */
 
 public class LibrarySystem {
