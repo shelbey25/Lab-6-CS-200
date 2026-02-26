@@ -9,6 +9,7 @@ Team Contributions:
     Jack Dean - 12207218- Added availability setting to book status, and wrote a rough radgh of class function grouop document.
     Michael Tesfaye - 12459837 - Provided feedback
     Chapman White - 12273039 - Provided feedback, attempted search functions
+    Keylend Brooks - 12345572 - Provided feedback, base class system for Book, librarystem, and student. Worked on branches
 */
 
 public class LibrarySystem {
