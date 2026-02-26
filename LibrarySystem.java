@@ -1,20 +1,63 @@
 import java.util.Vector;
+import java.util.Scanner;
 
 public class LibrarySystem {
 
     private static Vector<Book> books;
+    private static Vector<Student> students;
 
     public static void main(String[] args) {
         books = new Vector<Book>();
         books.add(new Book("Java Basics", "JK Rowling", 123456, true));
         books.add(new Book("Advanced Java", "Bruce Lee", 654321, true));
 
-         Student student1 = new Student(1, "Mr. Amebley");
-         Student student2 = new Student(2, "Mr. King");
+        students = new Vector<Student>();
+        students.add(new Student(1, "Mr. Amebley"));
+        students.add(new Student(2, "Mr. King"));
 
-         LibrarySystem.borrowBook(student1, "Java Basics");
-         LibrarySystem.borrowBook(student2, "Java Basics");
-         LibrarySystem.borrowBook(student2, "Advanced Java");
+        Student student1 = new Student(1, "Mr. Amebley");
+        Student student2 = new Student(2, "Mr. King");
+
+        LibrarySystem.borrowBook(student1, "Java Basics");
+
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("\nEnter username: ");
+            String username = scanner.nextLine();
+
+            System.out.println("\nEnter ID: ");
+            String studentId = scanner.nextLine();
+
+            boolean studentFound = false;
+
+            for (Student student : students) {
+                if (student.confirmIdentity(Integer.parseInt(studentId), username)) {
+                    System.out.println("Welcome, " + student.getName() + "!");
+                    studentFound = true;
+                    break;
+                }
+            }
+
+            if (!studentFound) {
+                System.out.println("Invalid username or ID. Please try again.");
+            } else {
+                break;
+            }
+        }
+        
+        while (true) {
+            System.out.println("\nEnter book name to borrow: ");
+            String bookName = scanner.nextLine();
+
+            if (bookName.equals("")) {
+                System.out.println("Exiting the library system. Goodbye!");
+                scanner.close();
+                break;
+            }
+
+            LibrarySystem.borrowBook(student2, bookName);
+        }
     }
 
     public static void borrowBook(Student student, String book_name) {
