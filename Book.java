@@ -16,8 +16,16 @@ public class Book{
         return title;
     }
 
-    public boolean isAvailable(){
+    public boolean getAvailable(){
         return isAvailable;
+    }
+    
+    public boolean setAvailable(){
+        this.isAvailable=true;
+    }
+    
+    public boolean setNotAvailable(){
+        this.isAvailable=false;
     }
 
     //need method that sets availability/status
