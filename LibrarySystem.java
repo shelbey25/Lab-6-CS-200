@@ -1,6 +1,6 @@
 import java.util.Vector;
 
-public class LibrarySystem{
+public class LibrarySystem {
 
     private static Vector<Book> books;
 
