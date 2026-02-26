@@ -1,6 +1,12 @@
 import java.util.Vector;
 import java.util.Scanner;
 
+/* 
+Team Contributions:
+    Shelbe Yousey - 12566098 - Wrote the main library system flow and helped implement borrowBook
+
+*/
+
 public class LibrarySystem {
 
     private static Vector<Book> books;
