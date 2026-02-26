@@ -27,6 +27,5 @@ public class Book{
     public boolean setNotAvailable(){
         this.isAvailable=false;
     }
-
-    //need method that sets availability/status
+    
 }
