@@ -16,15 +16,15 @@ public class Book{
         return title;
     }
 
-    public boolean getAvailable(){
+    public boolean getAvailable() {
         return isAvailable;
     }
     
-    public boolean setAvailable(){
+    public void setAvailable() {
         this.isAvailable=true;
     }
     
-    public boolean setNotAvailable(){
+    public void setNotAvailable() {
         this.isAvailable=false;
     }
     

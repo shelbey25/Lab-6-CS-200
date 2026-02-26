@@ -4,12 +4,11 @@ public class Student{
 
     public int studentID;
     public String name;
-    public Vector<String> borrowedBooks;
+    public Vector<Book> borrowedBooks;
 
-    public Student(int studentID, String name, Vector<String> borrowedBooks){
+    public Student(int studentID, String name){
         this.studentID = studentID;
         this.name = name;
-        this.borrowedBooks = borrowedBooks;
     }
 
     public boolean confirmIdentity(int studentID, String name) {
@@ -18,4 +17,9 @@ public class Student{
         }
         return false;
     }
+
+    public void borrowBook(Book bookName) {
+        borrowedBooks.add(bookName);
+    }
+ 
 }
