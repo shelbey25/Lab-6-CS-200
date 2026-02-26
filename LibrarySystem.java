@@ -5,6 +5,9 @@ import java.util.Scanner;
 Team Contributions:
     Shelbe Yousey - 12566098 - Wrote the main library system flow and helped implement borrowBook
     Charles Woods - 12144978 - Implemented the individual class declarations and brought them together.
+    Tsion Shamsu - 12460874 - Setup group document and basic classes
+    Jack Dean - 12207218- Added availability setting to book status, and wrote a rough radgh of class function grouop document.
+    Michael Tesfaye - 12459837 - Provided feedback
 */
 
 public class LibrarySystem {
