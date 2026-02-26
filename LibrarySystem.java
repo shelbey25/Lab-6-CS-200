@@ -1,11 +1,8 @@
 public class LibrarySystem{
 
-    public void borrowBook(int studentID, String studentName){
-
-        if(isAvailable){
-            System.out.println("Mr. Ambeley borrowed Java Basics");
-            isAvailable = False;
-            
+    public static void borrowBook(Student student, Book book) {
+        //need logic here
         }
-    }
+
+    //more methods
 }
