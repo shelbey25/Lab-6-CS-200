@@ -10,16 +10,16 @@ public class LibrarySystem{
                 if (book.getAvailable()) {
                     student.borrowBook(book);
                     book.setNotAvailable(); 
-                    System.out.println("Book borrowed successfully.");
+                    System.out.println(student.getName() + " borrowed " + book.getTitle() + ".");
                     return;
                 } else {
-                    System.out.println("Sorry, the book is currently unavailable.");
+                    System.out.println(book.getTitle() + " is not available.");
                     return;
                 }
             }
         }
         
-        System.out.println("Sorry, the book is not found in the library.");
+        System.out.println("Sorry, this book was not found in the library.");
 
         return;
     }

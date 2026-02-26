@@ -2,9 +2,9 @@ import java.util.Vector;
 
 public class Student{
 
-    public int studentID;
-    public String name;
-    public Vector<Book> borrowedBooks;
+    private int studentID;
+    private String name;
+    private Vector<Book> borrowedBooks;
 
     public Student(int studentID, String name){
         this.studentID = studentID;
@@ -22,5 +22,11 @@ public class Student{
     public void borrowBook(Book bookName) {
         borrowedBooks.add(bookName);
     }
+
+    public String getName() {
+        return name;
+    }
+
+     
  
 }
