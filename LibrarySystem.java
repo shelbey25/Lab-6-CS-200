@@ -4,6 +4,19 @@ public class LibrarySystem{
 
     private static Vector<Book> books;
 
+    public static void main(String[] args) {
+        books = new Vector<Book>();
+        books.add(new Book("Java Basics", "JK Rowling", 123456, true));
+        books.add(new Book("Advanced Java", "Bruce Lee", 654321, true));
+
+         Student student1 = new Student(1, "Mr. Amebley");
+         Student student2 = new Student(2, "Mr. King");
+
+         borrowBook(student1, "Java Basics");
+         borrowBook(student2, "Java Basics");
+         borrowBook(student2, "Advanced Java");
+    }
+
     public static void borrowBook(Student student, String book_name) {
         for (Book book : books) {
             if (book.getTitle().equals(book_name)) {
