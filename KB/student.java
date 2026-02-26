@@ -44,3 +44,5 @@ public class student {
 //use branches so that when multiple people are using the same file, 
 // //   each person can push their own rendition of the file and merge into one common branch
 //may need to fix conflicts
+//get add . to add changed files to commit
+//git commit -m "message" to commit changes to branch
