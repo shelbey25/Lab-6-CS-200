@@ -20,5 +20,5 @@ public class Book{
         return isAvailable;
     }
 
-    //need
+    //need method that sets availability/status
 }
