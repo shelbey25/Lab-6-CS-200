@@ -12,9 +12,9 @@ public class LibrarySystem{
          Student student1 = new Student(1, "Mr. Amebley");
          Student student2 = new Student(2, "Mr. King");
 
-         borrowBook(student1, "Java Basics");
-         borrowBook(student2, "Java Basics");
-         borrowBook(student2, "Advanced Java");
+         LibrarySystem.borrowBook(student1, "Java Basics");
+         LibrarySystem.borrowBook(student2, "Java Basics");
+         LibrarySystem.borrowBook(student2, "Advanced Java");
     }
 
     public static void borrowBook(Student student, String book_name) {
@@ -36,6 +36,4 @@ public class LibrarySystem{
 
         return;
     }
-
-    //more methods
 }
